@@ -30,3 +30,16 @@ def ver_resultados(encuesta, respuestas):
         print(f"\n{pregunta}")
         for i, opcion in enumerate(opciones):
             print(f"   {opcion}: {respuestas[pregunta][i]} votos")
+
+def main():
+    encuesta = {
+        "¿Cuál es tu lenguaje de programación favorito?": ["Python", "JavaScript"],
+        "¿Prefieres trabajar solo o en equipo?": ["Solo", "En equipo"],
+        "¿Qué sistema operativo usas más?": ["Windows", "Linux", "MacOS"]
+    }
+    respuestas = {pregunta: [0] * len(opciones) for pregunta, opciones in encuesta.items()}
+    
+    while True:
+        mostrar_menu()
+        opcion = input("Elige una opción: ")
+        
