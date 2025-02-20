@@ -43,3 +43,15 @@ def main():
         mostrar_menu()
         opcion = input("Elige una opción: ")
         
+        if opcion == "1":
+            responder_encuesta(encuesta, respuestas)
+        elif opcion == "2":
+            ver_resultados(encuesta, respuestas)
+        elif opcion == "3":
+            print("Saliendo del programa. ¡Gracias por participar!")
+            break
+        else:
+            print("Opción no válida. Intenta de nuevo.")
+
+if __name__ == "__main__":
+    main()
