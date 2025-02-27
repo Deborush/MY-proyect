@@ -1,4 +1,4 @@
-import random  # Importa el módulo random (aunque no se usa en este código)
+
 
 # Función para mostrar el menú principal
 def mostrar_menu():
